@@ -1,0 +1,7 @@
+.Portfolio {
+    background-image: url("../../Assets/bg.jpg");
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 80%;
+    min-height: 23em;
+}

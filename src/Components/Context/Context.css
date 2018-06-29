@@ -1,0 +1,44 @@
+.Context {
+    background-image: url("../../Assets/context.jpg");
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 80%;
+    height: 20em;
+}
+
+.row.head {
+    margin-top: 3em;
+    display: inline-block;
+}
+
+.row.head p {
+    font-weight: 700;
+}
+
+.col-xs-12 h1, .col-xs-12 p{
+   margin: 0.2em;
+}
+
+.row.social {
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 5em;
+}
+
+svg {
+    height: 1.7em;
+    fill: white;
+    transition: .3s;
+}
+
+.facebook svg:hover {
+    fill: #3b5998;
+}
+
+.instagram svg:hover {
+    fill: #e95950;
+}
+
+.email svg:hover {
+    fill: #749fd8;
+}
