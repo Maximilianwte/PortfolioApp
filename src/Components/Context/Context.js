@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 import "./Context.css";
 
@@ -12,7 +11,7 @@ class Context extends Component {
       <div className="Context container-fluid">
         <div className="row head">
           <div className="col-xs-12">
-            <h1>Helms.</h1>
+            <h1>Simon Helms.</h1>
             <p>Photography</p>
           </div>
         </div>
