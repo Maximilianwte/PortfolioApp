@@ -9,35 +9,36 @@ class ImageMainView extends Component {
   constructor(props) {
     super();
     this.state = {
+      image: [],
       imageUrl: ""
     };
   }
 
   // I believe I have to hook up a data storage and a database(for url).
   componentDidMount() {
-    console.log(this.props.article.fields);
-  }
-  render() {
     var client = contentful.createClient({
       space: keys.contentfulSpace,
       accessToken: keys.contentfulAccessToken
     });
 
-    const { image } = this.props.article.fields;
-    const { title } = this.props.article.fields.title;
+    if (this.props.match.params.slug != null) {
+      client.getEntry(this.props.match.params.slug).then(response => {
+        /* this.setState({ image: response.items }); */
+        console.log("response.items: ", response.items);
+      });
 
-    const asset = client.getAsset(this.props.article.fields.image.sys.id).then(
-      asset =>
+      client.getAsset(this.props.match.params.slug).then(asset =>
         this.setState({
           imageUrl: "https:" + `${asset.fields.file.url}`
         })
-      /*  console.log(`${asset.fields.file.url}?fm=jpg&fl=progressive`) */
-    );
+      );
+    }
+  }
+  render() {
     return (
-      <div className="ImageMainView gridItem">
-        <Link to="/">
-          <img src={this.state.imageUrl} alt={this.state.imageUrl} />
-        </Link>
+      <div className="ImageMainView">
+        <h3 />
+        <img src={this.state.imageUrl} alt="" />
       </div>
     );
   }

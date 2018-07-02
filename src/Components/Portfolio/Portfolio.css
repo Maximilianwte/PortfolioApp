@@ -1,11 +1,45 @@
 .Portfolio {
-    background-image: url("../../Assets/bg.jpg");
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 80%;
-    min-height: 23em;
+  background-image: url("../../Assets/bg.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 80%;
+  min-height: 23em;
+  display: inline-block;
 }
 
-.gridItem img{
-    height: 8em;
+.gridItem {
+  grid-column: span 1;
+}
+
+.gridItem img,
+.gridItem a {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1.25em;
+  padding: 0;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  opacity: 0;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 1s forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+.ImageMainView img {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3em;
 }

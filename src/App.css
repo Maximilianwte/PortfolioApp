@@ -51,17 +51,3 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 810px) {
-  html,
-  body {
-    font-size: 1.2rem;
-  }
-
-  .Context {
-    height: 28em !important;
-}
-
-.row.social {
-  width: 45% !important;
-}
-}

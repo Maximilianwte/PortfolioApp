@@ -10,16 +10,12 @@ class Portfolio extends Component {
   constructor(props) {
     super(props);
 
-    
-
     this.state = {
       imagesPreview: []
     };
   }
 
   componentDidMount() {
-    
-
     this.getImages();
   }
   getImages = () => {
@@ -29,14 +25,18 @@ class Portfolio extends Component {
     });
 
     client.getEntries().then(response => {
-        this.setState({ imagesPreview: response.items });
-      });
+      this.setState({ imagesPreview: response.items });
+    });
   };
   render() {
     const imagesPreview = this.state.imagesPreview.map((image, i) => (
       <ImagePreview id={i} key={i} article={image} />
     ));
-    return <div className="Portfolio gridContainer">{imagesPreview}</div>;
+    return (
+      <div className="Portfolio">
+        <div className="gridContainer fadeIn">{imagesPreview}</div>
+      </div>
+    );
   }
 }
 
