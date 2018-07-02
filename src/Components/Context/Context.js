@@ -16,7 +16,7 @@ class Context extends Component {
           </div>
         </div>
         <div className="row social">
-          <div className="col-sm-4 facebook">
+          <div className="col-4 facebook">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -27,7 +27,7 @@ class Context extends Component {
               </svg>
             </a>
           </div>
-          <div className="col-sm-4 instagram">
+          <div className="col-4 instagram">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -38,7 +38,7 @@ class Context extends Component {
               </svg>
             </a>{" "}
           </div>
-          <div className="col-sm-4 email">
+          <div className="col-4 email">
             <a
               target="_blank"
               rel="noopener noreferrer"

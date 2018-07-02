@@ -11,7 +11,6 @@ class Header extends Component {
   switchMenu() {
     $(".menuIcon").toggleClass("change");
     $(".containerX#menuOverlay").toggleClass("slideIn");
-    console.log("Menu switched");
   }
   render() {
     return (
@@ -33,10 +32,10 @@ class Header extends Component {
             <div className="bar2" />
             <div className="bar3" />
           </div>
-          <Link onclick={this.switchMenu} to={"/"}>
+          <Link onClick={this.switchMenu} to={"/"}>
             Home
           </Link>
-          <Link onclick={this.switchMenu} to={"/portfolio"}>
+          <Link onClick={this.switchMenu} to={"/portfolio"}>
             Portfolio
           </Link>
         </div>

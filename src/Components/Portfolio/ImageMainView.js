@@ -5,7 +5,7 @@ var contentful = require("contentful");
 
 const keys = require("../../Config/keys");
 
-class ImagePreview extends Component {
+class ImageMainView extends Component {
   constructor(props) {
     super();
     this.state = {
@@ -23,9 +23,10 @@ class ImagePreview extends Component {
       accessToken: keys.contentfulAccessToken
     });
 
+    const { image } = this.props.article.fields;
     const { title } = this.props.article.fields.title;
 
-    client.getAsset(this.props.article.fields.image.sys.id).then(
+    const asset = client.getAsset(this.props.article.fields.image.sys.id).then(
       asset =>
         this.setState({
           imageUrl: "https:" + `${asset.fields.file.url}`
@@ -33,13 +34,13 @@ class ImagePreview extends Component {
       /*  console.log(`${asset.fields.file.url}?fm=jpg&fl=progressive`) */
     );
     return (
-      <div className="ImagePreview gridItem">
-        <Link to={"/photograph/" + this.props.article.fields.image.sys.id}>
-          <img src={this.state.imageUrl} alt={title} title={title} />
+      <div className="ImageMainView gridItem">
+        <Link to="/">
+          <img src={this.state.imageUrl} alt={this.state.imageUrl} />
         </Link>
       </div>
     );
   }
 }
 
-export default ImagePreview;
+export default ImageMainView;

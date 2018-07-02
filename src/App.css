@@ -6,7 +6,7 @@ body {
   text-align: center;
   font-weight: 300;
   text-transform: lowercase;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 h1,
@@ -36,9 +36,9 @@ a {
   text-decoration: none;
   list-style: none;
   color: white;
-  transition: .3s;
-  padding-right: .2em;
-  border-right: .1em rgba(194, 194, 194, 0) solid;
+  transition: 0.3s;
+  padding-right: 0.2em;
+  border-right: 0.1em rgba(194, 194, 194, 0) solid;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: lowercase;
@@ -46,7 +46,22 @@ a {
 
 .Header a:hover {
   color: rgb(194, 194, 194);
-  padding-right: .2em;
-  border-right: .1em rgb(194, 194, 194) solid;
+  padding-right: 0.2em;
+  border-right: 0.1em rgb(194, 194, 194) solid;
   text-decoration: none;
+}
+
+@media screen and (max-width: 810px) {
+  html,
+  body {
+    font-size: 1.2rem;
+  }
+
+  .Context {
+    height: 28em !important;
+}
+
+.row.social {
+  width: 45% !important;
+}
 }

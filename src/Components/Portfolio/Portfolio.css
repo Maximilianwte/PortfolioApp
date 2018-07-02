@@ -5,3 +5,7 @@
     background-position-y: 80%;
     min-height: 23em;
 }
+
+.gridItem img{
+    height: 8em;
+}

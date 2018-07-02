@@ -4,6 +4,7 @@
 /node_modules
 /Backend/config
 /Backend/node_modules
+/src/Config
 
 # testing
 /coverage

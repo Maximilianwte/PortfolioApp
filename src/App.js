@@ -10,6 +10,7 @@ import ScrollToTop from "./ScrollToTop";
 import Context from "./Components/Context/Context";
 import Header from "./Components/Header/Header";
 import Portfolio from "./Components/Portfolio/Portfolio";
+import ImageMainView from "./Components/Portfolio/ImageMainView";
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <Header />
           <Route exact path="/" component={Context} />
           <Route exact path="/portfolio" component={Portfolio} />
+          <Route path="/photograph/:slug" component={ImageMainView} />
         </div>
       </ScrollToTop>
     </BrowserRouter>
