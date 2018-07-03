@@ -49,3 +49,19 @@ svg {
 .email svg:hover {
     fill: #749fd8;
 }
+
+.imprintLink {
+    position: fixed;
+    bottom: 2%;
+    right: 3%;
+}
+
+.imprintLink a {
+    font-weight: 300;
+    font-size: .6em;
+}
+
+.imprintLink a:hover {
+    text-decoration: none;
+    color: #ecc5c1;
+}

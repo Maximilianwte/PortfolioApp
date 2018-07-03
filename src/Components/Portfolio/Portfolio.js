@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import Helmet from "react-helmet";
+import ReactGA from "react-ga";
 import "./Portfolio.css";
 import ImagePreview from "./ImagePreview";
 var contentful = require("contentful");
 
 const keys = require("../../Config/keys");
+
+ReactGA.pageview("/portfolio");
 
 class Portfolio extends Component {
   constructor(props) {
@@ -33,8 +36,19 @@ class Portfolio extends Component {
       <ImagePreview id={i} key={i} article={image} />
     ));
     return (
-      <div className="Portfolio">
-        <div className="gridContainer fadeIn">{imagesPreview}</div>
+      <div className="wrapper">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Portfolio | Simon Helms Photography</title>
+          <meta name="description" content="" />
+          <meta
+            name="keywords"
+            content="Portfolio, Simon Helms, Simon, Helms, Photography, Fotografie,Foto, Night, Stars, Photo, Images, Göttingen, Hamburg, Germany, Deutschland, Fotograf, Photograph, Student"
+          />
+        </Helmet>
+        <div className="Portfolio">
+          <div className="gridContainer fadeIn">{imagesPreview}</div>
+        </div>
       </div>
     );
   }

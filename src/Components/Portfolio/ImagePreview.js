@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import ReactGA from "react-ga";
 var contentful = require("contentful");
 
 const keys = require("../../Config/keys");
@@ -34,7 +34,10 @@ class ImagePreview extends Component {
     );
     return (
       <div className="ImagePreview gridItem">
-        <Link to={"/photograph/" + this.props.article.fields.image.sys.id}>
+        <Link to={"/photograph/" + this.props.article.fields.image.sys.id} onClick={ReactGA.event({
+                category: "Behaviour",
+                action: "Event_001: Image Preview Clicked"
+              })}>
           <img src={this.state.imageUrl} alt={title} title={title} />
         </Link>
       </div>

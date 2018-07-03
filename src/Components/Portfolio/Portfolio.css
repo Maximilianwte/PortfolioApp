@@ -10,6 +10,7 @@
 
 .gridItem {
   grid-column: span 1;
+  z-index: 45;
 }
 
 .gridItem img,
@@ -28,6 +29,7 @@
   width: 95%;
   margin: 0 auto;
   margin-top: 2em;
+  z-index: 40;
 }
 
 .fadeIn {

@@ -7,6 +7,7 @@ body {
   font-weight: 300;
   text-transform: lowercase;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -42,6 +43,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: lowercase;
+  z-index: 100;
 }
 
 .Header a:hover {
@@ -51,3 +53,28 @@ a {
   text-decoration: none;
 }
 
+/* Footer */
+
+.row.devlight {
+  margin-top: 5em;
+}
+
+.col-12 img {
+  transition: 0.3s;
+}
+
+.col-12 img:hover {
+  opacity: 0.7;
+}
+
+.row.contentful {
+  margin-top: 2em;
+}
+
+.contentful img {
+  height: 2em;
+}
+
+.Imprint, .row {
+  z-index: 10;
+}
