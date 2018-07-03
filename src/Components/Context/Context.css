@@ -1,8 +1,8 @@
 .Context {
     background-image: url("../../Assets/context.jpg");
     background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 80%;
+    background-position-x: 35%;
+    background-position-y: 60%;
     height: 100vh;
 }
 
@@ -29,7 +29,7 @@
 .row.social {
     width: 25%;
     margin: 0 auto;
-    margin-top: 7em;
+    margin-top: 10em;
 }
 
 svg {

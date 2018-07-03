@@ -1,7 +1,7 @@
 html,
 body {
   background-color: rgb(43, 43, 43);
-  font-size: 1.5rem;
+  font-size: 2.3vw;
   color: #ffffff;
   text-align: center;
   font-weight: 300;
@@ -38,16 +38,16 @@ a {
   color: white;
   transition: 0.3s;
   padding-right: 0.2em;
-  border-right: 0.1em rgba(194, 194, 194, 0) solid;
+  border-right: 0.08em rgba(194, 194, 194, 0) solid;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: lowercase;
 }
 
 .Header a:hover {
-  color: rgb(194, 194, 194);
+  color: #ecc5c1;
   padding-right: 0.2em;
-  border-right: 0.1em rgb(194, 194, 194) solid;
+  border-right: 0.08em #ecc5c1 solid;
   text-decoration: none;
 }
 

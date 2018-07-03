@@ -42,7 +42,7 @@ class Context extends Component {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="mailto:simonhelms@domain.de"
+              href="mailto:simonhelms@live.com"
             >
               <svg viewBox="0 0 336.87 336.87">
                 <defs />
