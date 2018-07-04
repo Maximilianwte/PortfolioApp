@@ -16,7 +16,7 @@ class Context extends Component {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Simon Helms Photography | Göttigen, Germany.</title>
-          <meta name="description" content="" />
+          <meta name="description" content="Soultouching Photography made by Göttingen, Germany based Photograph Simon Helms." />
           <meta
             name="keywords"
             content="Simon Helms, Simon, Helms, Photography, Fotografie,Foto, Night, Stars, Portfolio, Photo, Images, Göttingen, Hamburg, Germany, Deutschland, Fotograf, Photograph, Student"

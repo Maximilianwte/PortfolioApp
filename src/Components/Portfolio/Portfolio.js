@@ -40,7 +40,7 @@ class Portfolio extends Component {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Portfolio | Simon Helms Photography</title>
-          <meta name="description" content="" />
+          <meta name="description" content="Soultouching Photography made by Göttingen, Germany based Photograph Simon Helms." />
           <meta
             name="keywords"
             content="Portfolio, Simon Helms, Simon, Helms, Photography, Fotografie,Foto, Night, Stars, Photo, Images, Göttingen, Hamburg, Germany, Deutschland, Fotograf, Photograph, Student"

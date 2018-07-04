@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 var contentful = require("contentful");
 
@@ -29,16 +30,30 @@ class ImageMainView extends Component {
 
       client.getAsset(this.props.match.params.slug).then(asset =>
         this.setState({
-          imageUrl: "https:" + `${asset.fields.file.url}`
+          imageUrl: "https:" + `${asset.fields.file.url}` + "?w=1600&h=1600"
         })
       );
     }
   }
+  switchMenu() {
+    $(".menuIconImg").toggleClass("change");
+  }
   render() {
     return (
-      <div className="ImageMainView">
-        <h3 />
-        <img src={this.state.imageUrl} alt="" />
+      <div className="wrapper">
+        <div className="ImageMainView">
+          <h3 />
+          <img src={this.state.imageUrl} alt="" />
+        </div>
+        <div className="menuOverlay">
+          <Link to={"/portfolio"}>
+            <div className="menuIconImg change" onClick={this.switchMenu}>
+              <div className="bar1" />
+              <div className="bar2" />
+              <div className="bar3" />
+            </div>
+          </Link>
+        </div>
       </div>
     );
   }

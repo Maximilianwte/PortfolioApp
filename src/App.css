@@ -1,7 +1,7 @@
 html,
 body {
   background-color: rgb(43, 43, 43);
-  font-size: 2.3vw;
+  font-size: 1.5rem;
   color: #ffffff;
   text-align: center;
   font-weight: 300;
@@ -55,8 +55,12 @@ a {
 
 /* Footer */
 
+.Imprint {
+  display: inline-block;
+}
+
 .row.devlight {
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 .col-12 img {
@@ -77,4 +81,47 @@ a {
 
 .Imprint, .row {
   z-index: 10;
+}
+
+.row#head {
+  margin-top: 5em;
+  justify-content: center;
+}
+
+.row#Privacy {
+  font-size: .5em;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-transform: initial;
+}
+
+.row#Privacy h4 {
+  font-size: .8em;
+}
+
+.row#Imprint {
+  margin-top: 2em;
+}
+
+.row#Imprint h4 {
+  font-size: 1.4em;
+}
+
+.row#Imprint h5 {
+  font-size: .9em;
+  font-weight: 800;
+  margin-top: -0.5em;
+}
+
+.row#Imprint a {
+  font-weight: 300;
+  font-size: .7em;
+  color: #ecc5c1;
+}
+
+.row#Imprint a:hover {
+  color: white;
+  text-decoration: none;
 }

@@ -3,7 +3,7 @@
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 70%;
-  min-height: 25em;
+  min-height: 100vh;
   width: 100%;
   display: inline-block;
 }
@@ -20,6 +20,13 @@
   margin-top: 1.25em;
   padding: 0;
   margin-bottom: 1em;
+  box-shadow: rgba(37, 37, 37, 0.596) 0px 3px 8px;
+  transition: .6s;
+}
+
+.gridItem img:hover {
+  opacity: .8;
+  box-shadow: rgba(37, 37, 37, 0.705) 0px 5px 10px;
 }
 
 .gridContainer {
@@ -46,11 +53,28 @@
   background-image: url("../../Assets/portfolio.jpg");
   background-size: cover;
   display: inline-block;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ImageMainView img {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 3em;
-  margin-bottom: 1em;
+  height: 90%;
+}
+
+.menuOverlay {
+  position: fixed;
+  z-index: 20;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.menuOverlay a {
+  position: fixed;
+  top: 3%;
+  left: 3%;
 }

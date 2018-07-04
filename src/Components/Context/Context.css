@@ -3,7 +3,7 @@
     background-size: cover;
     background-position-x: 35%;
     background-position-y: 60%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .row.head {

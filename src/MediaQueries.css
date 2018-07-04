@@ -1,28 +1,53 @@
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 280px) and (max-width: 350px) {
   .gridContainer {
     grid-template-columns: repeat(1, 1fr);
   }
   .gridItem img, .gridItem a{
     width: 80%;
   }
+
+  .Context, .Portfolio {
+    min-height: 23em;
+  }
+  
+  .row.social {
+    width: 85%;
+    margin-top: 8em;
+  }
 }
 
-@media screen and (min-width: 500px) and (max-width: 810px) {
-  html,
-  body {
-    font-size: 1.2rem;
+@media screen and (min-width: 351px) and (max-width: 561px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gridItem img, .gridItem a{
+    width: 80%;
   }
 
+  .Context, .Portfolio {
+    min-height: 23em;
+  }
+  .row.social {
+    width: 65%;
+    margin-top: 8em;
+  }
+}
+
+@media screen and (min-width: 561px) and (max-width: 810px) {
   .Context {
     height: 30em;
   }
 
-  .row.social {
-    width: 45%;
-  }
+  
+}
 
+@media screen and (min-width: 500px) and (max-width: 1050px) {
   .gridContainer {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
+  }
+  .row.social {
+    width: 45%;
+    margin-top: 8em;
   }
 }

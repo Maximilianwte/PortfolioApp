@@ -28,7 +28,7 @@ class ImagePreview extends Component {
     client.getAsset(this.props.article.fields.image.sys.id).then(
       asset =>
         this.setState({
-          imageUrl: "https:" + `${asset.fields.file.url}`
+          imageUrl: "https:" + `${asset.fields.file.url}` + "?w=600&h=600&f=bottom_right&fit=thumb"
         })
       /*  console.log(`${asset.fields.file.url}?fm=jpg&fl=progressive`) */
     );
