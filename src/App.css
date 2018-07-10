@@ -17,12 +17,12 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 h1 {
   font-size: 2em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
 }
 
 h2 {

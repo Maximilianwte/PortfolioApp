@@ -41,9 +41,9 @@ class ImageMainView extends Component {
   render() {
     return (
       <div className="wrapper">
-        <div className="ImageMainView">
-          <h3 />
+        <div className="ImageMainView fadeinplus">
           <img src={this.state.imageUrl} alt="" />
+          <div className="simonhelms opacityDown"><h6>simonhelms.de</h6></div>
         </div>
         <div className="menuOverlay">
           <Link to={"/portfolio"}>

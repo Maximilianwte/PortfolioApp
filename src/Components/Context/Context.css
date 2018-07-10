@@ -32,10 +32,14 @@
     margin-top: 10em;
 }
 
+.col-4 {
+    padding: .3em;
+}
+
 svg {
-    height: 1.7em;
     fill: white;
     transition: .3s;
+    max-height: 2em;
 }
 
 .facebook svg:hover {

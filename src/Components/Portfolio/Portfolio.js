@@ -48,7 +48,9 @@ class Portfolio extends Component {
         </Helmet>
         <div className="Portfolio">
           <div className="gridContainer fadeIn">{imagesPreview}</div>
+          <div className="simonhelms"><h6>simonhelms.de</h6></div>
         </div>
+        
       </div>
     );
   }
