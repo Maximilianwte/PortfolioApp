@@ -7,7 +7,7 @@
   }
 
   .Context, .Portfolio {
-    min-height: 23em;
+    min-height: 10em !important;
   }
   
   .row.social {
@@ -34,7 +34,7 @@
   }
 
   .Context, .Portfolio {
-    min-height: 23em;
+    min-height: 21em;
   }
   .row.social {
     width: 65%;
@@ -45,6 +45,14 @@
   }
   .row#Imprint h5 {
     font-size: .6em;
+  }
+
+  .head h1{
+    font-size: 1.4em;
+  }
+
+  .head p {
+    font-size: .8em !important;
   }
 }
 

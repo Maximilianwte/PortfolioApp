@@ -15,7 +15,7 @@ class Context extends Component {
       <div className="wrapper">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Simon Helms Photography | Göttigen, Germany.</title>
+          <title>Simon Helms Photography | Göttingen, Germany.</title>
           <meta name="description" content="Soultouching Photography made by Göttingen, Germany based Photograph Simon Helms." />
           <meta
             name="keywords"
