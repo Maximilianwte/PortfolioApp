@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
+import "hammerjs";
 
 var contentful = require("contentful");
 
@@ -17,6 +18,13 @@ class ImageMainView extends Component {
 
   // I believe I have to hook up a data storage and a database(for url).
   componentDidMount() {
+    /* var hammertime = new Hammer(myElement, myOptions);
+    hammertime.on('pan', function(ev) {
+	  console.log(ev);
+    }); */
+
+
+
     var client = contentful.createClient({
       space: keys.contentfulSpace,
       accessToken: keys.contentfulAccessToken

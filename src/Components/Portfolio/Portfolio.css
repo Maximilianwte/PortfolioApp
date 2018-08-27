@@ -62,7 +62,8 @@
 }
 
 .ImageMainView img {
-  height: 85%;
+  max-width: 80%;
+  max-height: 90%;
 }
 
 .menuOverlay {
@@ -81,7 +82,7 @@
 }
 
 .simonhelms {
-  position: absolute;
+  position: fixed;
   bottom: 0%;
   left: 3%;
 }

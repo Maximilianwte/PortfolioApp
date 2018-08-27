@@ -27,7 +27,7 @@ class Portfolio extends Component {
       accessToken: keys.contentfulAccessToken
     });
 
-    client.getEntries().then(response => {
+    client.getEntries({order: 'sys.createdAt'}).then(response => {
       this.setState({ imagesPreview: response.items });
     });
   };
