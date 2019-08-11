@@ -1,29 +1,16 @@
-# portfolio
+# Portfolio App
+An app created for a hamburg, germany based photograph combining vue.js and google firestore as content management system.
 
-## Project setup
-```
-npm install
-```
+![Screenshot](screenshot.png)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Tech Stack
+- Vue.js
+- Vuex
+- Vue Router
+- Tailwindcss
+- Firebase
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## ToDo
+- Add Google Analytics & SEO Optimizations
+- Add Simple CMS on page
+- Initilize Get License View
