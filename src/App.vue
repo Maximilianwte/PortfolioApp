@@ -7,6 +7,7 @@
 
 <script>
   import Navigation from "./views/Navigation";
+  import logic_functions from "./logic/logic_functions";
   import store from "./store";
 
   export default {
@@ -17,11 +18,16 @@
       theme() {
         return store.state.theme;
       }
+    },    
+    methods: {
+      get_images() {
+        logic_functions.get_images();
+      },
     },
     created() {
-      if (Store.state.fetch_images == false) {
+      if (store.state.fetch_images == false) {
         this.get_images()
-        Store.commit("setFetchImages", true)
+        store.commit("setFetchImages", true)
       }
     }
   }

@@ -7,10 +7,11 @@ export default new Vuex.Store({
   state: {
     theme: "theme_dark",
     fetch_images: false,
+    auth: false,
     images: []
   },
   mutations: {
-    toggleTheme(state, payload) {
+    toggleTheme(state) {
       state.theme = state.theme == "theme_light" ? "theme_dark" : "theme_light"
     },
     setFetchImages(state, payload) {
@@ -18,6 +19,10 @@ export default new Vuex.Store({
     },
     getImages(state, payload) {
       state.images.push(payload)
+    },
+    setAuth(state, payload) {
+      state.auth = payload
+      console.log(state.auth)
     }
   },
   actions: {

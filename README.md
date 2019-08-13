@@ -14,3 +14,5 @@ An app created for a hamburg, germany based photograph combining vue.js and goog
 - Add Google Analytics & SEO Optimizations
 - Add Simple CMS on page
 - Initilize Get License View
+
+.. credit: 4295
