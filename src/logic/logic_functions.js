@@ -16,7 +16,7 @@ firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
 
 let logic_functions = {
-    /*     get_images() {
+         get_images() {
             db.collection("images").get().then(function (querySnapshot) {
                 querySnapshot.forEach(function (doc) {
                     let data = doc.data()
@@ -34,7 +34,7 @@ let logic_functions = {
             }); 
 
 
-        },*/
+        },
     auth(input) {
         db.collection("credentials").get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {

@@ -52,6 +52,12 @@ export default new Router({
       name: 'auth',
       props: true,
       component: () => import(/* webpackChunkName: "about" */ './views/Auth.vue')
+    },
+    {
+      path: '/edit',
+      name: 'edit',
+      props: true,
+      component: () => import(/* webpackChunkName: "about" */ './views/Edit.vue')
     }
   ]
 })

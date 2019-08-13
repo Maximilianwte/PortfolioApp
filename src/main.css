@@ -64,6 +64,7 @@ svg {
   width: 1.5rem;
   stroke: var(--main-primary);
   fill: var(--main-primary);
+  cursor: pointer;
 }
 
 svg:hover {
@@ -78,5 +79,5 @@ svg:hover {
 }
 
 .grand-svg {
-  width: 4rem;
+  width: 2.7rem;
 }
