@@ -3,6 +3,7 @@
         <input class="text-bg_primary py-2 px-4 border rounded" id="userPassword" type="password" required>
         <input @click="get_auth" class="text-main_primary button py-2 bg-bg_primary px-4 border rounded" type="submit" value="Submit">
         <div class="message text-2xl pt-16">{{auth}}</div>
+        <div class="text-main_primary button py-2 bg-bg_primary w-1/6 px-4 border rounded"><button @click="eval_cookie">get cookie</button></div>
     </div>
 </template>
 <script>
@@ -21,6 +22,7 @@
                 var input = document.getElementById("userPassword").value;
                 logic_functions.auth(input)
                 this.eval_message()
+                logic_functions.set_authCookie() ? this.auth == true : ""
             },
             eval_message() {
                 let int = parseInt(Math.random() * 1);
@@ -40,6 +42,9 @@
                             this.message = "Versuch es noch einmal."
                     }
                 }
+            },
+            eval_cookie() {
+                Store.commit("setAuth", true) ? logic_functions.read_authCookie() : ""
             }
         }
     }

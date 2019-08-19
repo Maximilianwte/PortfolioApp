@@ -1,30 +1,30 @@
 <template>
-  <div class="about text-center w-full pl-8 pr-8 pt-16 flex-col justify-center sm:pl-16 sm:pr-16 sm:pt-32 lg:pl-32 lg:pr-32">
-    <h1 class="text-4xl font-medium uppercase tracking-normal pb-8 sm:pb-4">Simon Helms</h1>
+  <div class="about text-center lowercase w-full pl-8 pr-8 pt-16 flex-col justify-center sm:pl-16 sm:pr-16 sm:pt-32 lg:pl-32 lg:pr-32">
+    <h1 class="text-4xl font-medium tracking-normal pb-8 sm:pb-4">Simon Helms</h1>
     <div class="inner w-full pb-16 sm:flex justify-around">
       <div class="left w-full sm:w-1/2 flex justify-center pb-8 sm:pb-0">
         <li>
           <ul>
-            <h3 class="text-2xl font-medium uppercase tracking-normal pb-2">Born: Bad Oldesloe, Germany</h3>
+            <h3 class="text-2xl font-medium tracking-normal pb-2">Born: Bad Oldesloe, Germany</h3>
           </ul>
           <ul>
-            <h3 class="text-2xl font-medium uppercase tracking-normal pb-2">Studied: Göttigen, Germany</h3>
+            <h3 class="text-2xl font-medium tracking-normal pb-2">Studied: Göttigen, Germany</h3>
           </ul>
           <ul>
-            <h3 class="text-2xl font-medium uppercase tracking-normal pb-2">Lives: Hamburg, Germany</h3>
+            <h3 class="text-2xl font-medium tracking-normal pb-2">Lives: Hamburg, Germany</h3>
           </ul>
         </li>
       </div>
       <div class="right w-full sm:w-1/2 flex justify-center">
         <li>
           <ul>
-            <h3 class="text-2xl font-medium uppercase tracking-normal pb-2">Camera: Nokia 6300</h3>
+            <h3 class="text-2xl font-medium tracking-normal pb-2">Camera: Nokia 6300</h3>
           </ul>
           <ul>
-            <h3 class="text-2xl font-medium uppercase tracking-normal pb-2">Lense: Potato XL</h3>
+            <h3 class="text-2xl font-medium tracking-normal pb-2">Lense: Potato XL</h3>
           </ul>
           <ul>
-            <h3 class="text-2xl font-medium uppercase tracking-normal pb-2">Software: Adobe Lightroom</h3>
+            <h3 class="text-2xl font-medium tracking-normal pb-2">Software: Adobe Lightroom</h3>
           </ul>
         </li>
       </div>
