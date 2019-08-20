@@ -77,6 +77,9 @@ let logic_functions = {
             console.log('Uploaded a blob or file!');
         });
     },
+    delete_file(id) {
+        console.log(id)
+    },
     set_authCookie(input = 7) {
         var d = new Date();
         d.setTime(d.getTime() + (input*24*60*60*1000));

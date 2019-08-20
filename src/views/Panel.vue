@@ -6,7 +6,8 @@
         <div class="buttons w-full pl-64 pr-64 flex justify-around">
             <input type="file" @change="file_selected">
             <button @click="select_images" class="bg-transparent text-2xl hover:bg-blue-500 hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Upload</button>
-            <button class="bg-transparent text-2xl hover:bg-blue-500 hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Edit</button>
+                    <router-link class="bg-transparent text-2xl hover:bg-blue-500 hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" :to="{ name: 'edit', params: {} }">Edit
+        </router-link>
         </div>
     </div>
 </template>
@@ -30,9 +31,13 @@
             },
             select_images() {
                 console.log(logic_functions.select_images())
+            },
+            eval_auth() {
+                this.$router.push({ path: '/auth' }) ? Store.state.auth == false : ""
             }
         },
         created() {
+            //this.eval_auth();
             let int = parseInt(Math.random() * 4);
             switch (int) {
                 case 0:
