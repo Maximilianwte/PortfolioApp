@@ -79,11 +79,25 @@ let logic_functions = {
     },
     delete_file(id) {
         console.log(id)
+        db.collection("images").doc(id).delete().then(function () {
+            return 1
+        }).catch(function (error) {
+            return -1
+        });
+
+        return 0
+    },
+    update_meta(id, field, input) {
+        console.log(field + ", " + input)
+        var Ref = db.collection('images').doc(id);
+        var query = Ref.where("id", "==", id);
+        query.update({field: input})
+        return 1
     },
     set_authCookie(input = 7) {
         var d = new Date();
-        d.setTime(d.getTime() + (input*24*60*60*1000));
-        var expires = "expires="+ d.toUTCString();
+        d.setTime(d.getTime() + (input * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
         document.cookie = "auth=true" + ";" + expires + ";path=/";
         console.log("cookie set")
     },
@@ -91,14 +105,14 @@ let logic_functions = {
         var name = cookie + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
         var ca = decodedCookie.split(';');
-        for(var i = 0; i <ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
         }
         return "";
     }

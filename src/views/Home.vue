@@ -1,8 +1,8 @@
 <template>
   <div class="home text-center pt-32 sm:pt-16 w-full">
     <div class="header flex-column mt-12 items-center pb-16">
-      <h1 class="text-4xl sm:text-6xl font-bold leading-none">Simon Helms</h1>
-      <h3 class="text-2xl font-medium tracking-normal">Hamburg, Germany</h3>
+      <h1 class="text-4xl sm:text-6xl font-bold uppercase leading-none">Simon Helms</h1>
+      <h3 class="text-2xl font-medium lowercase tracking-normal">Hamburg, Germany</h3>
     </div>
     <div class="images flex-col justify-center pt-16 sm:pt-0">
       <template v-for="(Image, index) in Images">
